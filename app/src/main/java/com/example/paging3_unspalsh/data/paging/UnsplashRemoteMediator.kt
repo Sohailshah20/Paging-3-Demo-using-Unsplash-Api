@@ -14,7 +14,7 @@ import java.lang.Exception
 import javax.inject.Inject
 
 @OptIn(ExperimentalPagingApi::class)
-class UnsplashRemoteMediator @Inject constructor(
+class UnsplashRemoteMediator(
     private val unsplashApi: UnsplashApi,
     private val unsplashDatabase: UnsplashDatabase
 ) : RemoteMediator<Int, UnsplashImage>(){
